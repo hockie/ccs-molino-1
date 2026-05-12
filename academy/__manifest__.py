@@ -1,29 +1,27 @@
 {
-    'name': 'Odoo Academy',
-    'summary': """Module to handle Course and Sessions""",
+    'name': 'Students Management',
+    'summary': """Module to handle Students Management""",
     'description': """Module to handle:
-        - Courses
-        - Sessions
-        - Attendees
+        - Students
+        - Activities
+        - Lessons
         """,
     'license': 'OPL-1',
-    'author': 'Gigio89',
-    'website': 'www.infinion.ch',
+    'author': 'Hockie',
+    'website': 'www.adeluuve.com',
     'category': 'Custom Modules/Tech Training',
     'version': '1.0',
     'depends': ['base'],
     'data': [
-        'security/academy_groups.xml',
+        'security/student_groups.xml',
         'security/ir.model.access.csv',
-        'security/academy_security.xml',
-        'data/session_data.xml',
-        'views/academy_menuitems.xml',
-        'views/course_views.xml',
-        'views/session_views.xml',
+        'security/student_security.xml',
+        'views/student_menuitems.xml',
+        'views/student_views.xml',
+
     ],
     'demo': [
-        'demo/course_demo.xml',
-        'views/session_views.xml',
+        'demo/student_demo.xml',
     ],
     'application': True,
 }
